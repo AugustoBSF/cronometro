@@ -1,0 +1,110 @@
+@font-face{
+    font-family: alarme;
+    src: url('alarm_clock/alarm clock.ttf');
+}
+
+
+body{
+    height: 100vh;
+    
+    
+}
+
+h1{
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.685);
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 33%;    
+}
+
+.container h1{
+color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.timer{
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; ;
+    margin-left: 10px; ;
+    color: #172953;
+    min-width: 90px;
+    font-family: alarme;
+
+}
+
+.separator{
+    font-family: alarme;
+    padding: 0 10px;
+    color: #525763;
+    
+}
+
+#milliseconds{
+    font-size: 30px;
+    color: #525763;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    transition: all .2s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.btn.hover{
+    transform: scale(1.1);
+}
+
+#startBtn{
+    background-color: #175cff;
+    color: white;
+}
+
+#pauseBtn, #resumeBtn{
+    display:none
+}
+
+.video{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
